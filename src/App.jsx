@@ -1,34 +1,26 @@
 import { useEffect, useState } from "react";
 
 const topbarItems = [
+    {
+      label: "+977 98514 18471",
+      className: "topbar-item",
+      href: "tel:+9779851418471",
+      icon: (
+        <path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.28.54 3.5.54a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.16 21 3 13.84 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.18 2.4.54 3.5a1 1 0 0 1-.24 1z" />
+      ),
+    },
+    {
+      label: "+9779851418471",
+      className: "topbar-item",
+      href: "https://wa.me/9779851418471",
+      icon: (
+        <path d="M19.05 4.94A9.86 9.86 0 0 0 12.02 2C6.52 2 2.04 6.47 2.04 11.98c0 1.76.46 3.48 1.33 5L2 22l5.16-1.35a9.94 9.94 0 0 0 4.85 1.24h.01c5.5 0 9.98-4.47 9.98-9.98 0-2.67-1.04-5.18-2.95-6.97ZM12.02 20.2h-.01a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.06.8.82-2.98-.2-.3a8.2 8.2 0 0 1-1.27-4.4c0-4.54 3.69-8.24 8.24-8.24 2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.55-3.69 8.24-8.23 8.24Zm4.52-6.17c-.25-.12-1.47-.73-1.7-.82-.23-.08-.4-.12-.57.12-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.25a7.43 7.43 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.02 2.6.12.17 1.77 2.7 4.28 3.78.6.26 1.08.42 1.45.54.61.19 1.17.16 1.61.1.49-.07 1.47-.6 1.68-1.17.21-.58.21-1.07.15-1.17-.06-.1-.23-.17-.48-.29Z" />
+      ),
+    },
   {
-    label: "ISO Certified",
-    className: "topbar-item topbar-badge",
-    href: null,
-    icon: (
-      <path d="m12 2 2.47 2.5 3.48-.5.5 3.48L21 10l-2.55 2.52-.5 3.48-3.48-.5L12 18l-2.47-2.5-3.48.5-.5-3.48L3 10l2.55-2.52.5-3.48 3.48.5L12 2Zm-.96 12.4 5.2-5.2-1.06-1.06-4.14 4.14-2.12-2.12-1.06 1.06 3.18 3.18Z" />
-    ),
-  },
-  {
-    label: "+91 12345 67890",
+    label: "office.sunglow@gmail.com",
     className: "topbar-item",
-    href: "tel:+911234567890",
-    icon: (
-      <path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.28.54 3.5.54a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.16 21 3 13.84 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.18 2.4.54 3.5a1 1 0 0 1-.24 1z" />
-    ),
-  },
-  {
-    label: "WhatsApp Chat",
-    className: "topbar-item",
-    href: "https://wa.me/911234567890",
-    icon: (
-      <path d="M19.05 4.94A9.86 9.86 0 0 0 12.02 2C6.52 2 2.04 6.47 2.04 11.98c0 1.76.46 3.48 1.33 5L2 22l5.16-1.35a9.94 9.94 0 0 0 4.85 1.24h.01c5.5 0 9.98-4.47 9.98-9.98 0-2.67-1.04-5.18-2.95-6.97ZM12.02 20.2h-.01a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.06.8.82-2.98-.2-.3a8.2 8.2 0 0 1-1.27-4.4c0-4.54 3.69-8.24 8.24-8.24 2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.55-3.69 8.24-8.23 8.24Zm4.52-6.17c-.25-.12-1.47-.73-1.7-.82-.23-.08-.4-.12-.57.12-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.25a7.43 7.43 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.02 2.6.12.17 1.77 2.7 4.28 3.78.6.26 1.08.42 1.45.54.61.19 1.17.16 1.61.1.49-.07 1.47-.6 1.68-1.17.21-.58.21-1.07.15-1.17-.06-.1-.23-.17-.48-.29Z" />
-    ),
-  },
-  {
-    label: "hello@transitaxis.com",
-    className: "topbar-item",
-    href: "mailto:hello@transitaxis.com",
+    href: "mailto:office.sunglow@gmail.com",
     icon: <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.03-7.47 4.67a1 1 0 0 1-1.06 0L4 8.03V6l8 5 8-5v2.03Z" />,
   },
 ];
@@ -74,7 +66,8 @@ const services = [
 
 const navItems = [
   ["Home", "#home"],
-  ["About", "#about"],
+  ["About Us", "#about"],
+  ["Gallery", "#gallery"],
   ["Services", "#services"],
   ["Network", "#network"],
   ["Contact Us", "#contact-us"],
@@ -143,8 +136,8 @@ const bestAtItems = [
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "ISO Certified Process",
-    text: "Structured service quality backed by ISO certification to strengthen trust and business credibility.",
+    title: "Certified Process",
+    text: "Structured service quality backed by certification to strengthen trust and business credibility.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
   },
@@ -338,7 +331,7 @@ export default function App() {
             <div className="section-heading section-heading-centered">
               <h2>We Are Best At</h2>
               <p className="section-subtitle">
-                Focused logistics strengths delivered with dependable service standards and ISO-certified trust.
+                Focused logistics strengths delivered with dependable service standards and certified trust.
               </p>
             </div>
 
@@ -379,7 +372,7 @@ export default function App() {
                     <div>
                       <h3>Phone Support</h3>
                       <p>Immediate support for freight assistance and shipment queries.</p>
-                      <a href="tel:+911234567890">+91 12345 67890</a>
+                      <a href="tel:+9779851418471">+977 98514 18471</a>
                     </div>
                   </article>
 
@@ -390,9 +383,9 @@ export default function App() {
                       </svg>
                     </div>
                     <div>
-                      <h3>WhatsApp Inquiries</h3>
+                      <h3>WhatsApp Support</h3>
                       <p>Quick updates, document sharing, and fast communication.</p>
-                      <a href="https://wa.me/911234567890">Chat on WhatsApp</a>
+                      <a href="https://wa.me/9779851418471">+9779851418471</a>
                     </div>
                   </article>
 
@@ -405,7 +398,7 @@ export default function App() {
                     <div>
                       <h3>Email Communication</h3>
                       <p>Quotation requests, cargo details, and business communication.</p>
-                      <a href="mailto:hello@transitaxis.com">hello@transitaxis.com</a>
+                      <a href="mailto:office.sunglow@gmail.com">office.sunglow@gmail.com</a>
                     </div>
                   </article>
 
@@ -418,7 +411,7 @@ export default function App() {
                     <div>
                       <h3>Office Location</h3>
                       <p>Visit or coordinate directly from our operations base.</p>
-                      <span>Naraina Industrial Area, New Delhi</span>
+                      <span>Manbhawan-5, Lalitpur (Nepal)</span>
                     </div>
                   </article>
                 </div>
@@ -491,9 +484,9 @@ export default function App() {
 
             <div className="footer-column">
               <h3>Contact Info</h3>
-              <a href="tel:+911234567890">+91 12345 67890</a>
-              <a href="mailto:hello@transitaxis.com">hello@transitaxis.com</a>
-              <p>Naraina Industrial Area, New Delhi</p>
+              <a href="tel:+9779851418471">+977 98514 18471</a>
+              <a href="mailto:office.sunglow@gmail.com">office.sunglow@gmail.com</a>
+              <p>Manbhawan-5, Lalitpur (Nepal)</p>
               <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
             </div>
           </div>
@@ -505,7 +498,7 @@ export default function App() {
         </div>
       </footer>
       
-      <a href="https://wa.me/911234567890?text=Hello%2C%20I%27m%20interested%20in%20your%20transportation%20services" className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <a href="https://wa.me/9779851418471?text=Hello%2C%20I%27m%20interested%20in%20your%20transportation%20services" className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <div className="whatsapp-icon">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M19.05 4.94A9.86 9.86 0 0 0 12.02 2C6.52 2 2.04 6.47 2.04 11.98c0 1.76.46 3.48 1.33 5L2 22l5.16-1.35a9.94 9.94 0 0 0 4.85 1.24h.01c5.5 0 9.98-4.47 9.98-9.98 0-2.67-1.04-5.18-2.95-6.97ZM12.02 20.2h-.01a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.06.8.82-2.98-.2-.3a8.2 8.2 0 0 1-1.27-4.4c0-4.54 3.69-8.24 8.24-8.24 2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.55-3.69 8.24-8.23 8.24Zm4.52-6.17c-.25-.12-1.47-.73-1.7-.82-.23-.08-.4-.12-.57.12-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.25a7.43 7.43 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.02 2.6.12.17 1.77 2.7 4.28 3.78.6.26 1.08.42 1.45.54.61.19 1.17.16 1.61.1.49-.07 1.47-.6 1.68-1.17.21-.58.21-1.07.15-1.17-.06-.1-.23-.17-.48-.29Z"/>
