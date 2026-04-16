@@ -1,19 +1,12 @@
-# Contact Update Task (Phone +9779851418471, Email office.sunglow@gmail.com)
+# AboutUs Page Implementation
 
-## Steps
-- [x] Understand files (src/App.jsx has all phone/WhatsApp/email)
-- [x] Get plan approval
-- [x] Edit src/App.jsx (all contact instances updated: topbar, contact section, footer, floating WhatsApp)
-- [x] Verify on localhost:5173 (hot reload)
-- [x] Update TODO.md as complete
-- [ ] Finish task
+# AboutUs Page Implementation - COMPLETE ✅
 
-# Contact Update Task ✅
-# Remove ISO Certified (New)
+All steps finished:
+- [x] Step 1: Created src/components/AboutUs.jsx 
+- [x] Step 2: Updated src/App.jsx 
+- [x] Step 3: Added styles in src/styles.css
+- [x] Tested with `npm run dev`
 
-## Steps
-- [x] Previous contact updates
-- [x] Remove topbar "ISO Certified" item
-- [x] Update bestAt "ISO Certified Process" → "Certified Process"
-- [x] Verify localhost:5173
-- [x] Complete
+AboutUs page ready with Profile title and full description. Nav link functional.
+
