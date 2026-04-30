@@ -4,16 +4,28 @@ import Footer from "./Footer";
 
 const services = [
   {
-    title: "Air Freight",
-    text: "Fast movement for urgent cargo, coordinated documentation, and airport handling support.",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80",
-  },
-  {
     title: "Ocean Freight",
     text: "FCL and LCL freight planning with port coordination, container tracking, and routing support.",
     image:
       "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Rail Freight",
+    text: "Cost-effective, reliable transportation for heavy and bulk shipments across extended continental routes.",
+    image:
+      "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Road Freight",
+    text: "Domestic transport solutions for industrial, retail, and project cargo movement.",
+    image:
+      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Air Freight",
+    text: "Fast movement for urgent cargo, coordinated documentation, and airport handling support.",
+    image:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Custom Clearance",
@@ -26,12 +38,6 @@ const services = [
     text: "Storage, pallet handling, stock visibility, and dispatch-ready cargo staging.",
     image:
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Road Transportation",
-    text: "Domestic transport solutions for industrial, retail, and project cargo movement.",
-    image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Door Delivery",
@@ -103,6 +109,12 @@ const bestAtItems = [
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
   },
   {
+    title: "Project Management",
+    text: "End-to-end planning, resource allocation, and timeline tracking for complex supply chain logistics projects.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+  },
+  {
     title: "Certified Process",
     text: "Structured service quality backed by certification to strengthen trust and business credibility.",
     image:
@@ -134,7 +146,7 @@ export default function Home() {
       <main>
         <section className="hero-banner" id="home" aria-label="Transport showcase images">
           <div className="container">
-            <div className="hero-slider">
+            <div className="hero-slider" style={{ height: 'var(--hero-height, 430px)', minHeight: 'var(--hero-height, 430px)' }}>
               {heroSlides.map((slide, index) => (
                 <article
                   key={slide.title}
@@ -250,7 +262,8 @@ export default function Home() {
                     <div>
                       <h3>Phone Support</h3>
                       <p>Immediate support for freight assistance and shipment queries.</p>
-                      <a href="tel:+9779851418471">+977 98514 18471</a>
+                      <a href="tel:+9779851418471">+977 98514 18471</a><br/>
+                      <a href="tel:+9779821100074">+977 98211 00074</a>
                     </div>
                   </article>
 

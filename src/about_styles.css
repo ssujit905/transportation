@@ -17,10 +17,10 @@
 }
 
 .about-text-content p {
-  margin-bottom: 2rem;
-  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .section-subheading-centered {
@@ -65,7 +65,7 @@
 }
 
 .about-profile-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .vision-mission-grid {
@@ -122,36 +122,77 @@
 }
 
 .team-grid-simple {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 3rem auto 0;
+}
+
+@media (min-width: 1024px) {
+  .team-grid-simple {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    gap: 1.5rem;
+  }
+}
+
+.team-member-card {
+  display: flex;
+  align-items: center;
   gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-.team-card-minimal {
-  padding: 2rem 1.5rem;
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.4);
+  padding: 1rem 1.5rem;
+  background: white;
   border: 1px solid var(--line);
-  text-align: center;
+  border-radius: 16px;
+  text-align: left;
 }
 
-.team-card-minimal h4 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+.team-photo-frame {
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.team-member-card h4 {
+  margin: 0;
+  font-size: 1.15rem;
   color: var(--navy);
 }
 
-.team-card-minimal p {
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
-  margin-bottom: 0 !important;
+.team-member-card span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.team-member-info {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 860px) {
-  .vision-mission-grid,
-  .team-grid-simple {
+  .vision-mission-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-member-card {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+    border-radius: 12px;
+  }
+  .team-photo-frame {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .team-member-card h4 {
+    font-size: 1.05rem;
+  }
+  .team-member-card span {
+    font-size: 0.85rem;
   }
 }

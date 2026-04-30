@@ -1,8 +1,21 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import '../about_styles.css';
 
 const companyName = "Sunglow Freight and Cargo Pvt. Ltd.";
+
+const teamMembers = [
+  { name: "Sonam Singh", role: "Managing Director" },
+  { name: "Gyanendra Sharma Paudel", role: "Chief Executive Officer" },
+  { name: "Rahul Chaurasiya", role: "Director/Sales" },
+  { name: "Sujit Singh", role: "Sales Coordinator" },
+  { name: "Pramod Chaurasiya", role: "IT Coordinator" },
+  { name: "Sandeep Gupt", role: "Account Head" },
+  { name: "Abhisek Sir", role: "Sales Manager" },
+  { name: "Ajay Rijal", role: "Operation Head" },
+  { name: "Bikram Patel", role: "Operation Coordinator" }
+];
 
 export default function AboutUs() {
   return (
@@ -84,14 +97,16 @@ export default function AboutUs() {
               <div className="team-section-p">
                 <h3 className="section-subheading-centered">Our Team</h3>
                 <p>A dedicated team of professionals committed to delivering excellence in every shipment.</p>
-                <div className="team-grid-placeholder">
-                  {[1, 2, 3].map((id) => (
-                    <div key={id} className="team-member-card">
+                <div className="team-grid-simple">
+                  {teamMembers.map((member, index) => (
+                    <div key={index} className="team-member-card">
                       <div className="team-photo-frame">
                         <div className="photo-placeholder"></div>
                       </div>
-                      <h4>Team Member</h4>
-                      <span>Position Placeholder</span>
+                      <div className="team-member-info">
+                        <h4>{member.name}</h4>
+                        <span>{member.role}</span>
+                      </div>
                     </div>
                   ))}
                 </div>

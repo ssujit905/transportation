@@ -24,9 +24,21 @@ export default function Contact() {
             <div className="contact-info-panel">
               <div className="info-item">
                 <div className="info-icon">📍</div>
-                <div>
-                  <h3>Our Office</h3>
-                  <p>Manbhawan-5, Lalitpur (Nepal)</p>
+                <div className="offices-list">
+                  <div className="office-entry">
+                    <h3>Head Office</h3>
+                    <p>Manbhawan-5, Lalitpur (Nepal)</p>
+                  </div>
+                  <div className="office-entry">
+                    <h3>Corporate Office</h3>
+                    <p>Sirisya Dryport, Birgunj, Nepal</p>
+                  </div>
+                  <div className="office-entry">
+                    <h3>Branch Offices</h3>
+                    <p><strong>Bhairahawa:</strong> Custom Office, Nepal</p>
+                    <p><strong>Butwal:</strong> Horizon Chowk, Nepal</p>
+                    <p><strong>Biratnagar:</strong> Biratnagar Custom Office</p>
+                  </div>
                 </div>
               </div>
               <div className="info-item">
@@ -34,6 +46,7 @@ export default function Contact() {
                 <div>
                   <h3>Phone</h3>
                   <p>+977 98514 18471</p>
+                  <p>+977 98211 00074</p>
                 </div>
               </div>
               <div className="info-item">

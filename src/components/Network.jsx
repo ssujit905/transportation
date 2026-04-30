@@ -20,14 +20,19 @@ export default function Network() {
             <p className="section-subtitle">Connecting origins to destinations with a robust global and domestic partner network.</p>
           </div>
 
-          <div className="network-content-layout">
-            <div className="network-map-placeholder">
-               <div className="placeholder-text">Global Network Map Coming Soon</div>
+          <div className="network-viz-container">
+            <div className="world-map-wrapper">
+              <img 
+                src="/network-map.png" 
+                alt="Global Network Connectivity Map" 
+                className="network-map-image"
+              />
             </div>
             
             <div className="network-stats-grid">
               {networkRegions.map(region => (
                 <div key={region.name} className="network-card-simple">
+                  <div className="network-accent-dot"></div>
                   <h3>{region.name}</h3>
                   <p>{region.description}</p>
                 </div>

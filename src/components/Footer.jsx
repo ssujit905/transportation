@@ -34,18 +34,22 @@ export default function Footer() {
 
               <div className="footer-column">
                 <h3>Our Services</h3>
-                <p>Air Freight</p>
                 <p>Ocean Freight</p>
+                <p>Rail Freight</p>
+                <p>Road Freight</p>
+                <p>Air Freight</p>
+                <p>Custom Clearance</p>
                 <p>Warehousing</p>
-                <p>Road Transportation</p>
+                <p>Door Delivery</p>
               </div>
 
               <div className="footer-column">
                 <h3>Contact Info</h3>
                 <a href="tel:+9779851418471">+977 98514 18471</a>
+                <a href="tel:+9779821100074">+977 98211 00074</a>
                 <a href="mailto:office.sunglow@gmail.com">office.sunglow@gmail.com</a>
-                <p>Manbhawan-5, Lalitpur (Nepal)</p>
-                <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                <p style={{ whiteSpace: 'nowrap' }}><strong>Head Office:</strong> Manbhawan-5, Lalitpur</p>
+                <p style={{ whiteSpace: 'nowrap' }}>Sun - Sat: 9:00 AM - 7:00 PM</p>
               </div>
             </div>
 
