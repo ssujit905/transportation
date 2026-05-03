@@ -318,6 +318,10 @@ export default function Home() {
                   <input type="email" placeholder="you@company.com" />
                 </label>
                 <label>
+                  Mobile Number
+                  <input type="tel" placeholder="+977 9XXXXXXXXX" />
+                </label>
+                <label>
                   Cargo Type
                   <input type="text" placeholder="Machinery, retail goods, raw materials" />
                 </label>
@@ -328,11 +332,7 @@ export default function Home() {
                 <button type="submit" className="button button-primary">
                   Send Inquiry
                 </button>
-                {submitted ? (
-                  <p className="form-note">Thanks! We can connect this form to email, WhatsApp, or a CRM next.</p>
-                ) : (
-                  <p className="form-note">Dummy form for now. Later we can wire this to your real lead flow.</p>
-                )}
+                {submitted && <p className="success-msg">Inquiry sent! We'll get back to you shortly.</p>}
               </form>
             </div>
           </div>

@@ -68,6 +68,10 @@ export default function Contact() {
                 <input type="email" placeholder="john@example.com" required />
               </div>
               <div className="form-group">
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="+977 9XXXXXXXXX" required />
+              </div>
+              <div className="form-group">
                 <label>Message</label>
                 <textarea rows="6" placeholder="How can we help you?" required></textarea>
               </div>
