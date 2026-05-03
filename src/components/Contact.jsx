@@ -58,25 +58,31 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="contact-form-main" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label>Name</label>
-                <input type="text" placeholder="John Doe" required />
-              </div>
-              <div className="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="john@example.com" required />
-              </div>
-              <div className="form-group">
-                <label>Mobile Number</label>
+            <form className="quote-form quote-form-polished" onSubmit={handleSubmit}>
+              <label>
+                Full Name
+                <input type="text" placeholder="Your name" required />
+              </label>
+              <label>
+                Business Email
+                <input type="email" placeholder="you@company.com" required />
+              </label>
+              <label>
+                Mobile Number
                 <input type="tel" placeholder="+977 9XXXXXXXXX" required />
-              </div>
-              <div className="form-group">
-                <label>Message</label>
-                <textarea rows="6" placeholder="How can we help you?" required></textarea>
-              </div>
-              <button type="submit" className="button button-primary">Send Message</button>
-              {submitted && <p className="success-msg">Message sent! We'll get back to you shortly.</p>}
+              </label>
+              <label>
+                Cargo Type
+                <input type="text" placeholder="Machinery, retail goods, raw materials" required />
+              </label>
+              <label>
+                Shipment Details
+                <textarea rows="5" placeholder="Tell us origin, destination, and transport mode." required></textarea>
+              </label>
+              <button type="submit" className="button button-primary">
+                Send Inquiry
+              </button>
+              {submitted && <p className="success-msg">Inquiry sent! We'll get back to you shortly.</p>}
             </form>
           </div>
         </div>
