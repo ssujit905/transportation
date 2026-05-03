@@ -134,12 +134,7 @@ export default function Header() {
           </Link>
 
           <nav id="site-nav" className={`site-nav${menuOpen ? " open" : ""}`}>
-            <div className="mobile-nav-header">
-              <span className="brand-mark brand-logo-wrap" style={{width: 40, height: 40, padding: 0}}>
-                <img src="/logo.png" alt="Sunglow Freight" className="brand-logo" />
-              </span>
-              <strong>Menu</strong>
-            </div>
+
             <div className="nav-links">
               {navItems.map((item) => (
                 <Link key={item.label} to={item.href} onClick={handleNavClick} className="nav-link">
