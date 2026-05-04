@@ -34,9 +34,9 @@ const topbarItems = [
     ),
   },
   {
-    label: "office.sunglow@gmail.com",
+    label: "info@sunglowfreight.com",
     className: "topbar-item",
-    href: "mailto:office.sunglow@gmail.com",
+    href: "mailto:info@sunglowfreight.com",
     icon: <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.03-7.47 4.67a1 1 0 0 1-1.06 0L4 8.03V6l8 5 8-5v2.03Z" />,
   },
 ];

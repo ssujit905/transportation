@@ -24,7 +24,7 @@ export default function Careers() {
             <p>Thank you for your interest in joining Sunglow Freight and Cargo. While we don't have any active vacancies at this time, we are always on the lookout for motivated professionals.</p>
             <div className="careers-cta">
               <p>You can send your resume to our HR department for future openings:</p>
-              <a href="mailto:office.sunglow@gmail.com" className="email-link">office.sunglow@gmail.com</a>
+              <a href="mailto:info@sunglowfreight.com" className="email-link">info@sunglowfreight.com</a>
             </div>
           </div>
         </div>

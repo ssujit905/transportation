@@ -47,7 +47,7 @@ export default function Footer() {
                 <h3>Contact Info</h3>
                 <a href="tel:+9779851418471">+977 98514 18471</a>
                 <a href="tel:+9779821100074">+977 98211 00074</a>
-                <a href="mailto:office.sunglow@gmail.com">office.sunglow@gmail.com</a>
+                <a href="mailto:info@sunglowfreight.com">info@sunglowfreight.com</a>
                 <p style={{ whiteSpace: 'nowrap' }}><strong>Head Office:</strong> Manbhawan-5, Lalitpur</p>
                 <p style={{ whiteSpace: 'nowrap' }}>Sun - Sat: 9:00 AM - 7:00 PM</p>
               </div>

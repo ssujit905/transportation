@@ -289,7 +289,7 @@ export default function Home() {
                     <div>
                       <h3>Email Communication</h3>
                       <p>Quotation requests, cargo details, and business communication.</p>
-                      <a href="mailto:office.sunglow@gmail.com">office.sunglow@gmail.com</a>
+                      <a href="mailto:info@sunglowfreight.com">info@sunglowfreight.com</a>
                     </div>
                   </article>
 

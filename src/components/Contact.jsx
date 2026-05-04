@@ -53,7 +53,7 @@ export default function Contact() {
                 <div className="info-icon">✉️</div>
                 <div>
                   <h3>Email</h3>
-                  <p>office.sunglow@gmail.com</p>
+                  <p>info@sunglowfreight.com</p>
                 </div>
               </div>
             </div>
